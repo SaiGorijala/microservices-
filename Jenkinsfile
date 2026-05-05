@@ -3,12 +3,12 @@ pipeline {
     
     environment {
         // Docker Hub credentials (configure in Jenkins)
-        DOCKER_HUB_CREDENTIALS = credentials('docker-hub-credentials')
-        DOCKER_HUB_REPO = 'saisrinivasgorijala/microservices-app'
+        DOCKER_HUB_CREDENTIALS = sgorijala513
+        DOCKER_HUB_REPO = 'saigorijala/microservices-app'
         
         // SonarQube configuration
-        SONAR_HOST_URL = 'http://your-sonarqube-url:9000'
-        SONAR_TOKEN = credentials('sonar-token')
+        SONAR_HOST_URL = 'http://100.24.18.115:9000'
+        SONAR_TOKEN = squ_bfa70d5e228271bee11f60b9e8e83e5ea04d9d33 
         
         // Trivy scan severity
         TRIVY_SEVERITY = 'HIGH,CRITICAL'
